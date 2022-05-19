@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+    
+    <script src="assets/js/head.js"></script>
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <div id="container">
+
+        <!-- header -->
+        <script src="assets/js/header.js"></script>
+
+        <!-- pushbar -->
+        <script src="assets/js/nav_pushbar.js"></script>
+        <script src="assets/js/cart_pushbar.js"></script>
+
+        <!-- 內容 start -->
+        <section class="main">
+            <div class="content">
+                <div class="row">
+                    <!-- 左側：搜尋&分類目錄 start -->
+                    <div class="col-lg-2">
+                        <!-- 搜尋 -->
+                        <form class="d-flex search-box">
+                            <input class="form-control me-2" type="search" placeholder="關鍵字" aria-label="Search">
+                            <button class="btn" type="submit"><span class="material-icons">search</span></button>
+                        </form>
+                        <!--分類目錄 -->
+                        <script src="assets/js/product_categories.js"></script>
+                    </div>
+                    <!-- 左側：搜尋&分類目錄 end -->
+                    <!-- 右側：產品介紹 start -->
+                    <div class="col-lg-10">
+
+                        <nav aria-label="breadcrumb" class="mt-5" style="font-size: 14px;">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">所有商品</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">開發版</li>
+                            </ol>
+                        </nav>
+
+                        <div class="row">
+                            <div class="col-md-7 p-3">
+                                <div id="carouselExampleIndicators" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item product-img active">
+                                            <img src="assets/img/demo-1.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item product-img">
+                                            <img src="assets/img/demo-7.png" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item product-img">
+                                            <img src="assets/img/demo-8.png" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item product-img">
+                                            <img src="assets/img/demo-8.png" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col-md-5 mt-3">
+                                <div class="product-name-lg">GoPro-HERO10-Black-全方位運動攝影機-CHDHX-101-RW</div>
+                                <div class="rating-star-lg mt-3">
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star</span>
+                                    <span>(5)</span>
+                                </div>
+                                <div class="product-price-lg">NT$ 15,980</div>
+
+                                <div style="font-size: .75rem; margin:.5rem 0;">
+                                    購買數量
+                                    <div class="p-num">
+                                        <div class="p-num1">
+                                            <div class="quantity-form">
+                                                <a href="javascript:;" class="decrement">-</a>
+                                                <input type="text" class="itxt" value="1">
+                                                <a href="javascript:;" class="increment">+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row px-1 pb-3" style="border-bottom: 1px dashed #E5E5E5;">
+                                    <a href="" class="col d-flex justify-content-center align-items-center py-3 m-2 btn-blue">
+                                        加入購物車
+                                    </a>
+                                    <a href="" class="col d-flex justify-content-center align-items-center py-2 m-2 btn-orange">
+                                        立即購買
+                                    </a>
+                                </div>
+                                <div class="py-3">
+                                    <div class="other-info-box"><span class="material-icons">local_shipping</span>配送方式：7-11店到店、郵局、宅配</div>
+                                    <div class="other-info-box"><span class="material-icons">credit_card</span>付款方式：信用卡、超商繳費</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav class="my-3 comment-area">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="product-info-tab" data-bs-toggle="tab" data-bs-target="#product-info" type="button" role="tab" aria-controls="product-info" aria-selected="true">商品資訊</button>
+                                <button class="nav-link" id="product-spec-tab" data-bs-toggle="tab" data-bs-target="#product-spec" type="button" role="tab" aria-controls="product-spec" aria-selected="false">商品規格</button>
+                                <button class="nav-link" id="product-comment-tab" data-bs-toggle="tab" data-bs-target="#product-comment" type="button" role="tab" aria-controls="product-comment" aria-selected="false">商品評價</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active p-3" id="product-info" role="tabpanel" aria-labelledby="product-info-tab">商品資訊</div>
+                            <div class="tab-pane fade p-3" id="product-spec" role="tabpanel" aria-labelledby="product-spec-tab">商品規格</div>
+
+                            <div class="tab-pane fade p-3" id="product-comment" role="tabpanel" aria-labelledby="product-comment-tab">
+                                <div class="d-flex align-items-start comment-area">
+                                    <!-- 評價星等 -->
+                                    <div class="nav flex-column nav-pills me-3" id="ranking-tab" role="tablist" aria-orientation="vertical">
+                                        <button class="nav-link star-btn py-3 active" id="five-stars-tab" data-bs-toggle="pill" data-bs-target="#five-stars" type="button" role="tab" aria-controls="five-stars" aria-selected="true">5<span class="material-icons">star</span></button>
+                                        <button class="nav-link star-btn py-3" id="four-stars-tab" data-bs-toggle="pill" data-bs-target="#four-stars" type="button" role="tab" aria-controls="four-stars" aria-selected="false">4<span class="material-icons">star</span></button>
+                                        <button class="nav-link star-btn py-3" id="three-stsrs-tab" data-bs-toggle="pill" data-bs-target="#three-stsrs" type="button" role="tab" aria-controls="three-stsrs" aria-selected="false">3<span class="material-icons">star</span></button>
+                                        <button class="nav-link star-btn py-3" id="two-stsrs-tab" data-bs-toggle="pill" data-bs-target="#two-stsrs" type="button" role="tab" aria-controls="two-stsrs" aria-selected="false">2<span class="material-icons">star</span></button>
+                                        <button class="nav-link star-btn py-3" id="one-stars-tab" data-bs-toggle="pill" data-bs-target="#one-stars" type="button" role="tab" aria-controls="one-stars" aria-selected="false">1<span class="material-icons">star</span></button>
+                                    </div>
+                                    <!-- 評價 -->
+                                    <div class="tab-content col" id="ranking-tabContent">
+                                        <div class="tab-pane fade show active" id="five-stars" role="tabpanel" aria-labelledby="five-stars-tab">
+                                            <div class="comment-box p-3">
+                                                <p class="comment-member">i*****6</p>
+                                                <p class="comment-text">出貨速度快，商品很棒～</p>
+                                                <p class="comment-date">2022-01-02</p>
+                                            </div>
+                                            <div class="comment-box p-3">
+                                                <p class="comment-member">i*****6</p>
+                                                <p class="comment-text">出貨速度快，商品很棒～<br>會繼續回購</p>
+                                                <p class="comment-date">2022-01-02</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="four-stars" role="tabpanel" aria-labelledby="four-stars-tab">
+                                            <p class="comment-text">尚無4星評價～</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="three-stsrs" role="tabpanel" aria-labelledby="three-stsrs-tab">
+                                            <p class="comment-text">尚無3星評價～</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="two-stsrs" role="tabpanel" aria-labelledby="two-stsrs-tab">
+                                            <p class="comment-text">尚無2星評價～</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="one-stsr" role="tabpanel" aria-labelledby="one-stsr-tab">
+                                            <p class="comment-text">尚無1星評價～</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右側：產品介紹 end -->
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <script src="assets/js/footer.js"></script>
+        </footer>
+    </div>
+
+    <!-- script -->
+    <!--引用jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- boostrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+
+    <!-- pushbar -->
+    <script type="text/javascript" src="assets/pushbar/pushbar.js"></script>
+
+    <!-- rating-stars -->
+    <script src="assets/js/rating.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>

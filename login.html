@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+    
+    <script src="assets/js/head.js"></script>
+</head>
+
+<style>
+.nav-link{
+    padding: 1rem;
+}
+.nav-tabs .nav-link{
+    background-color: #E5E5E5;
+    color: #aaaaaa;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border: none;
+}
+.nav-tabs .nav-link.active{
+    background-color: #fff;
+    color: #255F95;
+    font-weight: bold;
+}
+</style>
+
+<body>
+    <div id="container">
+
+        <!-- header -->
+        <script src="assets/js/header.js"></script>
+
+        <!-- pushbar -->
+        <script src="assets/js/nav_pushbar.js"></script>
+        <script src="assets/js/cart_pushbar.js"></script>
+
+        <!-- 內容 start -->
+        <section class="main">
+            <div class="content">
+                <div class="page-title">會員登入/註冊</div>
+                <div class="d-flex justify-content-center">
+                    <div class="login-box">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link col active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">登入</button>
+                                <button class="nav-link col" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">註冊</button>
+                            </div>
+                        </nav>
+                        <!-- 登入資料 -->
+                        <div class="tab-content p-4" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="mb-3 input-box">
+                                    <label for="recName" class="form-label">帳號（E-mail）</label>
+                                    <input type="text" class="form-control" id="account">
+                                </div>
+                                <div class="mb-3 input-box">
+                                    <label for="recPhone" class="form-label">密碼</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                                <a href="order_list.html" class="d-flex justify-content-center align-items-center py-3 mt-4 btn-blue">登入</a>
+                                <a href="" class="d-flex justify-content-center pt-3 f-sm">忘記密碼</a>
+                            </div>
+                            <!-- 註冊資料 -->
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="mb-3 input-box">
+                                    <label for="recName" class="form-label">姓名</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="mb-3 input-box">
+                                    <label for="recPhone" class="form-label">電話</label>
+                                    <input type="text" class="form-control" id="phone">
+                                </div>
+                                <div class="mb-3 input-box">
+                                    <label for="recEmail" class="form-label">E-mail（登入帳號）</label>
+                                    <input type="text" class="form-control" id="mail">
+                                </div>
+                                <div class="mb-3 input-box">
+                                    <label for="recPassword" class="form-label">密碼</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                                <div class="mb-3 input-box">
+                                    <label for="recRePassword" class="form-label">確認密碼</label>
+                                    <input type="password" class="form-control" id="repassword">
+                                </div>
+                                <a href="order_list.html" class="d-flex justify-content-center align-items-center py-3 mt-4 btn-blue">註冊會員</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+
+        <footer>
+            <script src="assets/js/footer.js"></script>
+        </footer>
+    </div>
+
+    <!-- script -->
+    <!--引用jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- boostrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+
+    <!-- pushbar -->
+    <script type="text/javascript" src="assets/pushbar/pushbar.js"></script>
+
+    <!-- rating-stars -->
+    <script src="assets/js/rating.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>

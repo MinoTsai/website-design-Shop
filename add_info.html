@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+    
+    <script src="assets/js/head.js"></script>
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <div id="container">
+
+        <!-- header -->
+        <script src="assets/js/header.js"></script>
+
+        <!-- pushbar -->
+        <script src="assets/js/nav_pushbar.js"></script>
+        <script src="assets/js/cart_pushbar.js"></script>
+
+        <!-- 內容 start -->
+        <section class="main">
+            <div class="content">
+                <!-- 訂單流程 -->
+                <div align="center">
+                    <div class="d-flex justify-content-around my-4" style="max-width: 600px;">
+                        <div href="cart.htmlcheck_payment.html" class="cart-step-bg">
+                            <div class="cart-step-inner">購物清單</div>
+                        </div>
+                        <div class="cart-step-bg-active">
+                            <div class="cart-step-inner">資料填寫</div>
+                        </div>
+                        <div class="cart-step-bg">
+                            <div class="cart-step-inner">資訊確認<br>付款</div>
+                        </div>
+                        <div class="cart-step-bg">
+                            <div class="cart-step-inner">完成訂購</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card my-3">
+                            <div class="card-header py-3">訂購人資訊</div>
+                            <div class="card-body">
+                                <div class="mb-3" style="font-size: 14px;">
+                                    <label for="buyerName" class="form-label">姓名</label>
+                                    <input type="text" class="form-control" id="buyerName">
+                                </div>
+                                <div class="mb-3" style="font-size: 14px;">
+                                    <label for="buyerPhone" class="form-label">電話</label>
+                                    <input type="text" class="form-control" id="buyerPhone">
+                                </div>
+                                <div class="mb-3" style="font-size: 14px;">
+                                    <label for="buyerEmail" class="form-label">E-mail</label>
+                                    <input type="text" class="form-control" id="buyerEmail">
+                                </div>
+                                <div class="mb-3" style="font-size: 14px;">
+                                    <label for="buyerAdd" class="form-label">地址</label>
+                                    <input type="text" class="form-control" id="buyerAdd">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card my-3">
+                            <div class="card-header py-3">收件人資訊
+                                <p class="mx-3" style="display: inline-block; font-size:14px;">
+                                    <input type="checkbox" id="sameAsBuyer" value="first_checkbox">
+                                    <label for="sameAsBuyer">同訂購人資料</label>
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3" style="font-size: 14px;">
+                                    <label for="recName" class="form-label">姓名</label>
+                                    <input type="text" class="form-control" id="recName">
+                                </div>
+                                <div class="mb-3" style="font-size: 14px;">
+                                    <label for="recPhone" class="form-label">電話</label>
+                                    <input type="text" class="form-control" id="recPhone">
+                                </div>
+                                <div class="mb-3" style="font-size: 14px;">
+                                    <label for="recEmail" class="form-label">E-mail</label>
+                                    <input type="text" class="form-control" id="recEmail">
+                                </div>
+                                <div class="mb-3" style="font-size: 14px;">
+                                    <label for="recAdd" class="form-label">地址</label>
+                                    <input type="text" class="form-control" id="recAdd">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-3">
+                        <div class="card">
+                            <div class="card-header py-3">訂單摘要</div>
+                            <div class="card-body">
+                                <div class="my-3" style="font-size: 14px;">商品總計<span style="float: right;">$5,178</span></div>
+                                <div class="my-3" style="font-size: 14px;">運費總計<span style="float: right;">$100</span></div>
+                                <hr>
+                                <div class="my-3" style="font-size: 14px; color: #255F95; font-weight:bold;">結帳總金額<span style="float: right;">$5,278</span></div>
+                                <a href="check_payment.html" class="d-flex justify-content-center align-items-center py-3 mt-3 btn-orange">前往結帳</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <script src="assets/js/footer.js"></script>
+        </footer>
+    </div>
+
+    <!-- script -->
+    <!--引用jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- boostrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+
+    <!-- pushbar -->
+    <script type="text/javascript" src="assets/pushbar/pushbar.js"></script>
+
+    <!-- rating-stars -->
+    <script src="assets/js/rating.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
